@@ -1,1 +1,86 @@
 /*  your css code here. If applicable */
+/* Reset default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables for Easy Theming */
+:root {
+    --button-bg-color: #ff5a5f;
+    --button-text-color: #ffffff;
+    --button-hover-bg-color: #e04e54;
+    --button-border-radius: 5px;
+    --hero-bg-color: #ffffff;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(135, 206, 235); /* Light sky blue background */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Hero Container */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--hero-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Explore Now Button Styling */
+.explore-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: var(--button-border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: var(--button-hover-bg-color);
+}
